@@ -1,0 +1,81 @@
+<DOCCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Premium Profile Card Generator</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="form-container">
+
+<h2>Create Your Profile Card</h2>
+
+<form id="profileForm">
+
+<label>Full Name</label>
+<input type="text" id="fullName" placeholder="Enter your full name" required>
+
+<label>Role</label>
+<input type="text" id="role" placeholder="Web Developer" required>
+
+<label>Skill</label>
+<input type="text" id="skill" placeholder="HTML CSS JavaScript" required>
+
+<button type="submit">
+Generate Card
+</button>
+
+</form>
+
+</div>
+
+<div class="card-container hidden" id="cardContainer">
+
+<div class="profile-card">
+
+<div class="circle1"></div>
+<div class="circle2"></div>
+
+<div class="avatar" id="avatar">
+A
+</div>
+
+<h2 id="cardName">
+Your Name
+</h2>
+
+<h4 id="cardRole">
+Your Role
+</h4>
+
+<p id="cardSkill">
+Skill
+</p>
+
+</div>
+
+<button id="downloadBtn">
+Save / Download PDF
+</button>
+
+</div>
+
+</div>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
